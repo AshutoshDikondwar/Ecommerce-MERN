@@ -1,0 +1,73 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    max-width: 100%;
+    place-items: center;
+}
+
+.one {
+    width: 10vmax;
+    /* background-color: tomato; */
+    position: absolute;
+    height: 10vmax;
+    border-bottom: 5px solid rgb(110, 110, 110);
+    border-radius: 50%;
+    animation: loadingRotate 1000ms linear infinite;
+}
+.two {
+    width: 8vmax;
+    position: absolute;
+    height: 8vmax;
+    border-top: 5px solid rgb(14, 53, 194);
+    border-radius: 50%;
+    animation: loadingRotateR 1000ms linear infinite;
+}
+
+.three{
+    width: 6vmax;
+    position: absolute;
+    height: 6vmax;
+    border-top: 5px solid rgb(14, 194, 74);
+    border-radius: 50%;
+    animation: loadingRotate 1000ms linear infinite;
+}
+.four{
+    width: 4vmax;
+    position: absolute;
+    height: 4vmax;
+    border-top: 5px solid rgb(194, 14, 122);
+    border-radius: 50%;
+    animation: loadingRotateR 1000ms linear infinite;
+}
+.five{
+    width: 4vmax;
+    position: absolute;
+    height: 4vmax;
+    border-top: 5px solid rgb(222, 241, 8);
+    border-radius: 50%;
+    animation: loadingRotateR 1000ms linear infinite;
+}
+.six{
+    width: 4vmax;
+    position: absolute;
+    height: 4vmax;
+    border-top: 5px solid rgb(8, 159, 241);
+    border-radius: 50%;
+    animation: loadingRotateR 1000ms linear infinite;
+}
+@keyframes loadingRotate {
+    to{
+        transform: rotateZ(-360deg);
+    }
+    
+}
+
+@keyframes loadingRotateR {
+    to{
+        transform: rotateZ(360deg);
+    }
+    
+}
+

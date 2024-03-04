@@ -1,0 +1,76 @@
+footer {
+    margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: rgb(34, 31, 31);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.leftFooter {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftFooter>h4 {
+    font-family: 'Roboto';
+    font-size: 1vmax;
+}
+
+.leftFooter>p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0.5vmax 0;
+    font-size: 1.2vmax;
+
+}
+
+.leftFooter>img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.midfooter {
+    width: 60%;
+    text-align: center;
+}
+
+.midfooter>h1 {
+    font-size: 3.8vmax;
+    font-family: 'Roboto';
+}
+
+.midfooter>p {
+    max-width: 60%;
+    margin: 1vmax auto;
+    font-size: 1.2vmax;
+    font-family: 'Roboto';
+}
+
+.rightfooter {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightfooter>h4 {
+    font-family: 'Roboto';
+    font-size: 1.4vmax;
+    text-decoration: underline;
+}
+.rightfooter>a{
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    margin: 0.5vmax;
+    transition: 0.3s ease-in-out;
+}
+.rightfooter>a:hover{
+    color: red;
+}
