@@ -24,9 +24,9 @@ import {
     ALL_REVIEW_FAIL
 } from '../constatnts/ProductConstants'
 
-export const getProducts = (keyword = "", cuurrentPage = 1, price = [0, 25000], category, ratings = 0) => async (dispatch) => {
+export const getProducts = (keyword = "", cuurrentPage = 1, price = [0, 100000], category, ratings = 0) => async (dispatch) => {
     try {
-
+console.log("get products");
         dispatch({ type: ALL_PRODUCT_REQUEST })
         // let link = `/api/v1/products?keyword=${keyword}&page=${cuurrentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`
         let link = `/api/v1/products?keyword=${keyword}&page=${cuurrentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`
@@ -35,10 +35,13 @@ export const getProducts = (keyword = "", cuurrentPage = 1, price = [0, 25000], 
             link = `/api/v1/products?keyword=${keyword}&page=${cuurrentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`
         }
         const { data } = await axios.get(link)
+        console.log("get products 2");
+        console.log(data);
         dispatch({
             type: ALL_PRODUCT_SUCCESS,
             payload: data
         })
+        console.log("get products 2");
     } catch (err) {
         dispatch({
             type: ALL_PRODUCT_FAIL,

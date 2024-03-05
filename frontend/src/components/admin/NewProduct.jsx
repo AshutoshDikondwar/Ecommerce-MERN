@@ -31,13 +31,13 @@ const NewProduct = () => {
 
 
     const categories = [
-        "Laptop",
-        "Footwear",
-        "Bottom",
-        "Tops",
-        "Attire",
-        "Camera",
-        "Mobile"
+        "Electronics",
+        "Fashion",
+        "Furniture",
+        "Kids",
+        "Groceries",
+        "Books",
+        "Footwear"
     ]
 
     const createProductSubmitHandler = (e) => {

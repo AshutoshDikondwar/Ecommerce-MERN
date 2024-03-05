@@ -106,14 +106,18 @@ const getAllProducts = async (req, res) => {
         const productCount = await Product.countDocuments()
 
         const apiFeatures = new ApiFeatures(Product.find(), req.query).search().filter().pagination(resultPerPage)
-
+console.log("api feature");
+console.log(apiFeatures);
         const products = await apiFeatures.query;
+        console.log("products");
+        console.log(products);
         res.status(200).json({
             success: true,
             products,
             productCount,
             resultPerPage
         })
+        console.log("success");
     } catch (err) {
         if (err.name === "CastError") {
             const message = `Resource not Found invalid: ${err.path}`

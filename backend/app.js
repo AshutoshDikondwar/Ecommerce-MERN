@@ -9,15 +9,15 @@ import payment from './routes/PaymentRoute.js'
 import bodyParser from 'body-parser'
 import fileUpload from 'express-fileupload'
 import dotenv from 'dotenv'
-import cors from 'cors'
+// import cors from 'cors'
 
 // import nodemailer from 'nodemailer'
 
 const app = express()
-app.use(cors())
-if(process.env.NODE_ENV !== 'production'){
+// app.use(cors())
+// if(process.env.NODE_ENV !== 'production'){
     dotenv.config({ path: ".env" })
-}
+// }
 app.use(express.json())
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true }))

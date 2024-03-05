@@ -1,7 +1,7 @@
 // import * as Stripe from "stripe";
 // const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 import dotenv from 'dotenv'
-dotenv.config({ path: "backend/.env" })
+dotenv.config({ path: ".env" })
 
 import Stripe from "stripe";
 const secret = process.env.STRIPE_SECRET_KEY;
